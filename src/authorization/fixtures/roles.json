@@ -1,0 +1,26 @@
+[
+  {
+    "model": "authorization.role",
+    "pk": 1,
+    "fields": {
+      "name": "ADMIN",
+      "description": "Administrator with full access"
+    }
+  },
+  {
+    "model": "authorization.role",
+    "pk": 2,
+    "fields": {
+    "name": "INSTRUCTOR",
+      "description": "Instructor role for teaching"
+    }
+  },
+  {
+    "model": "authorization.role",
+    "pk": 3,
+    "fields": {
+      "name": "STUDENT",
+      "description": "Student role for learning"
+    }
+  }
+]

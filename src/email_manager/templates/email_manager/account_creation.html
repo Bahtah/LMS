@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Created</title>
+</head>
+<body>
+    <p>Уважаемый(я)
+        {% if role == "STUDENT" %}студент {% elif role == "INSTRUCTOR" %} преподаватель {% endif %}
+        {% if first_name %}{{ first_name }}{% else %}{{ user_email }}{% endif %},
+    </p>
+    <p>Ваш аккаунт был создан в системе PyAcademy.</p>
+    <p><strong>Ваш email для входа:</strong> {{ user_email }}</p>
+    <p><strong>Ваш пароль:</strong> {{ password }}</p>
+    <br>
+    <p>С уважением,<br>Команда PyAcademy</p>
+</body>
+</html>
